@@ -1,0 +1,15 @@
+n=int(raw_input())
+c=map(int,raw_input().split())
+p=0
+s=0
+while(p!=n-1):
+    if p+1==n-1:
+        p=p+1
+        s=s+1
+    elif c[p+2]==1:
+        p=p+1
+        s=s+1
+    else:
+        p=p+2
+        s=s+1
+print(s)
